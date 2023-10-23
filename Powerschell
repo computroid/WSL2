@@ -1,0 +1,9 @@
+
+netsh interface portproxy add v4tov4 `
+		listenport=80 `
+		listenaddres=0.0.0.0 `
+		connectport=80 `
+		connectaddress=172.23.152.98
+
+//to view address
+netsh interface portproxy showall
