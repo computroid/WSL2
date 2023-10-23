@@ -17,29 +17,21 @@ Computroid is a powerful computational tool that can perform complex calculation
 
 ## Installation
 
-1. First, you need to clone this repository to your local machine.
+1. First, you need to run this commandd to your local machine.
 
 ```shell
-git clone https://github.com/computroid/Computroid.git
-```
+netsh interface portproxy add v4tov4 `
+		listenport=80 `
+		listenaddres=0.0.0.0 `
+		connectport=80 `
+		connectaddress=172.23.152.98```
 
-2. Navigate to the project directory.
-
-```shell
-cd Computroid
-```
-
-3. Run the installer.
+2. View status.
 
 ```shell
-python install.py
+netsh interface portproxy showall
 ```
 
-4. Start Computroid.
-
-```shell
-python computroid.py
-```
 
 ## Usage
 
